@@ -13,10 +13,11 @@
     outline: none;
     text-decoration: none;
     border: none;
-    text-transform: lowercase;
+    text-transform: lowercase; /* ❌ esse aqui */
     transition: 0.2s linear;
     font-family: "Roboto", sans-serif;
 }
+
 
 body {
     background-color: var(--bg);
@@ -773,4 +774,5 @@ footer {
     .menu-mobile {
         display: none;
     }
+
 }
