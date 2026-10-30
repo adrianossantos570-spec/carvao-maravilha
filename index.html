@@ -4,29 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Carvão Maravilha: carvão vegetal de eucalipto, sustentável, com queima uniforme e pouca fumaça.">
     <title>Carvão Maravilha</title>
 
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- Fonte -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <div class="progress" aria-hidden="true"></div>
 
     <header class="header">
         <section>
-            <a href="#" class="logo so-primeira-letra">
-                <img src="imagens/23.png" alt="logo">
-            </a>
+            <a href="#Home" class="logo"><img src="imagens/23.png" alt="Carvão Maravilha"></a>
+
+            <button class="btn-menu" aria-label="Abrir menu" aria-expanded="false"><i class="bi bi-list"></i></button>
 
             <nav class="navbar">
                 <a href="#Home">Home</a>
                 <a href="#About">Sobre</a>
+                <a href="#Eco">Produção</a>
                 <a href="#Menu">Menu</a>
                 <a href="#Review">Avaliações</a>
                 <a href="#Address">Endereço</a>
@@ -35,175 +36,263 @@
         </section>
     </header>
 
-    <!-- HOME -->
-    <div class="home-container">
-        <section id="Home">
-            <div class="content">
-                <p class="cordefundo-text so-primeira-letra">
-                    Carvão vegetal à base de eucalipto
-                </p>
-                <p class="cordefundo-text so-primeira-letra">
-                    O carvão vegetal de eucalipto é uma opção sustentável e eficiente para churrascos e uso industrial.
-                    Produzido a partir de árvores de crescimento rápido, como o eucalipto, ele oferece queima uniforme,
-                    alta durabilidade e menor emissão de fumaça. Além disso, seu uso contribui para a preservação de
-                    florestas nativas, tornando-o uma escolha consciente e de excelente desempenho.
-                </p>
-                <a href="#Menu" class="btn">PEGUE O SEU AGORA</a>
+    <main>
+        <!-- HOME -->
+        <div class="home-container" id="Home">
+            <section>
+                <div class="content">
+                    <h1 class="cordefundo-text" style="--i:0">Carvão vegetal à base de eucalipto</h1>
+                    <p class="cordefundo-text" style="--i:1">
+                        O carvão vegetal de eucalipto é uma opção sustentável e eficiente para churrascos e uso
+                        industrial. Produzido a partir de árvores de crescimento rápido, como o eucalipto, ele oferece
+                        queima uniforme, alta durabilidade e menor emissão de fumaça. Além disso, seu uso contribui para
+                        a preservação de florestas nativas, tornando-o uma escolha consciente e de excelente desempenho.
+                    </p>
+                    <div class="acoes">
+                        <a href="#Menu" class="btn" style="--i:2">PEGUE O SEU AGORA</a>
+                        <a href="#Eco" class="btn btn-outline" style="--i:3">Como é produzido</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- SOBRE -->
+        <section class="About" id="About">
+            <h2 class="title">Sobre <span>Nós</span></h2>
+            <div class="row">
+                <div class="container-image">
+                    <img src="imagens/0.png" alt="Sobre nós" loading="lazy">
+                </div>
+                <div class="content">
+                    <h3>O que faz nosso produto especial</h3>
+                    <p>
+                        Carvão Maravilha é a escolha certa: produto sustentável, feito com madeira especializada e não
+                        nativa, garantindo qualidade na brasa e respeito ao meio ambiente.
+                    </p>
+                    <p>
+                        Desde o início, a marca se destacou pelo cuidado em cada detalhe — da seleção da madeira ao
+                        processo de carbonização — sempre respeitando o meio ambiente e valorizando a tradição do
+                        churrasco brasileiro. Hoje, o Carvão Maravilha é sinônimo de qualidade, confiança e paixão pelo
+                        churrasco.
+                    </p>
+                </div>
             </div>
         </section>
-    </div>
 
-    <!-- SOBRE -->
-    <section class="About" id="About">
-        <h2 class="title">Sobre <span>Nós</span></h2>
-        <div class="row">
-            <div class="container-image">
-                <img src="imagens/0.png" alt="sobre-nos">
+
+        <!-- PRODUÇÃO SUSTENTÁVEL -->
+        <section class="Eco" id="Eco">
+            <h2 class="title">Produção <span>Sustentável</span></h2>
+            <p class="lead">Do plantio à brasa: veja em poucos minutos como o carvão de eucalipto é produzido.</p>
+
+            <nav class="eco-nav" aria-label="Atalhos desta seção">
+                <a href="#eco-reflorestamento">Reflorestamento</a>
+                <a href="#eco-carbono">Ciclo do carbono</a>
+                <a href="#eco-energia">Eficiência</a>
+                <a href="#eco-certificacoes">Certificações</a>
+                <a href="#eco-processo">Passo a passo</a>
+                <a href="#eco-duvidas">Dúvidas</a>
+            </nav>
+
+            <div class="resumo">
+                <h3>Em resumo</h3>
+                <ul class="lista">
+                    <li>Vem de <strong>floresta plantada</strong> de eucalipto, não de mata nativa.</li>
+                    <li>A árvore cresce rápido e <strong>rebrota ou é replantada</strong> após a colheita.</li>
+                    <li>O CO₂ liberado na queima é <strong>reabsorvido</strong> pelas novas árvores.</li>
+                    <li>Queima <strong>mais forte e por mais tempo</strong> que a lenha, com pouca fumaça.</li>
+                </ul>
             </div>
-            <div class="content">
-                <h3 class="so-primeira-letra">O que faz nosso produto especial</h3>
-                <p class="so-primeira-letra">
-                    Carvão Maravilha é a escolha certa: produto sustentável, feito com madeira especializada e não
-                    nativa, garantindo qualidade na brasa e respeito ao meio ambiente.
-                </p>
-                <p class="so-primeira-letra">
-                    Desde o início, a marca se destacou pelo cuidado em cada detalhe — da seleção da madeira ao processo
-                    de carbonização — sempre respeitando o meio ambiente e valorizando a tradição do churrasco
-                    brasileiro. Hoje, o Carvão Maravilha é sinônimo de qualidade, confiança e paixão pelo churrasco.
-                </p>
+
+            <div class="box-container">
+                <article class="box" id="eco-reflorestamento">
+                    <i class="bi bi-tree eco-icone" aria-hidden="true"></i>
+                    <h3>Reflorestamento</h3>
+                    <ul class="lista">
+                        <li>Eucalipto cultivado em áreas próprias para plantio.</li>
+                        <li>Ciclo de colheita de cerca de 5 a 7 anos, conforme região e manejo.</li>
+                        <li>Depois do corte, a área rebrota ou é replantada.</li>
+                        <li>Menos pressão sobre a floresta nativa.</li>
+                    </ul>
+                </article>
+
+                <article class="box" id="eco-carbono">
+                    <i class="bi bi-recycle eco-icone" aria-hidden="true"></i>
+                    <h3>Ciclo neutro de carbono</h3>
+                    <ul class="lista">
+                        <li>Ao crescer, a árvore absorve CO₂ do ar.</li>
+                        <li>Ao queimar, o carvão devolve esse mesmo carbono.</li>
+                        <li>A floresta replantada absorve de novo: o saldo tende a ser neutro.</li>
+                        <li>Diferente do carvão mineral e do petróleo, que liberam carbono estocado há milhões de anos.</li>
+                    </ul>
+                    <p class="nota">A neutralidade depende do bom manejo da floresta e de fornos bem operados.</p>
+                </article>
+
+                <article class="box" id="eco-energia">
+                    <i class="bi bi-lightning-charge eco-icone" aria-hidden="true"></i>
+                    <h3>Eficiência energética</h3>
+                    <ul class="lista">
+                        <li>A carbonização remove umidade e concentra carbono.</li>
+                        <li>Libera mais energia por quilo que a lenha.</li>
+                        <li>Acende fácil e mantém brasa uniforme por mais tempo.</li>
+                        <li>Pouca fumaça e quase nenhuma faísca.</li>
+                    </ul>
+                </article>
+
+                <article class="box" id="eco-certificacoes">
+                    <i class="bi bi-patch-check eco-icone" aria-hidden="true"></i>
+                    <h3>Certificações florestais</h3>
+                    <ul class="lista">
+                        <li><strong>FSC</strong> e <strong>Cerflor (PEFC)</strong> são os selos mais conhecidos no Brasil.</li>
+                        <li>Verificam origem em floresta plantada e manejo responsável.</li>
+                        <li>Exigem rastreabilidade da madeira até o produto.</li>
+                        <li>Incluem critérios ambientais e trabalhistas.</li>
+                    </ul>
+                    <p class="nota">Ao comprar de qualquer marca, peça o certificado e confira o código no site do selo.</p>
+                </article>
+            </div>
+
+            <h3 class="sub" id="eco-processo">Passo a passo da produção</h3>
+            <ol class="passos">
+                <li class="passo"><h4>Plantio e manejo</h4><p>Mudas de eucalipto são plantadas e cuidadas até a idade de corte.</p></li>
+                <li class="passo"><h4>Colheita</h4><p>A madeira é cortada e deixada secar para reduzir a umidade.</p></li>
+                <li class="passo"><h4>Carbonização</h4><p>A madeira queima com pouco oxigênio em forno, até virar carvão.</p></li>
+                <li class="passo"><h4>Seleção e ensacamento</h4><p>Os pedaços são separados e embalados no peso indicado.</p></li>
+            </ol>
+
+            <h3 class="sub" id="eco-duvidas">Dúvidas frequentes</h3>
+            <div class="faq">
+                <details>
+                    <summary>O carvão de eucalipto vem de desmatamento?</summary>
+                    <p>Não, quando vem de floresta plantada com origem comprovada. É por isso que a rastreabilidade e as certificações importam.</p>
+                </details>
+                <details>
+                    <summary>Por que solta menos fumaça?</summary>
+                    <p>A madeira passa por carbonização completa e já perdeu a maior parte da umidade e dos voláteis. O que sobra queima de forma mais limpa.</p>
+                </details>
+                <details>
+                    <summary>Como escolher o tamanho do saco?</summary>
+                    <p>Os sacos de 4 kg e 8 kg atendem churrascos em família. Os de 10 kg e 25 kg rendem mais para eventos ou uso frequente.</p>
+                </details>
+            </div>
+
+            <div class="eco-cta">
+                <a href="#Menu" class="btn">Ver tamanhos e preços</a>
+            </div>
+        </section>
+
+        <!-- MENU -->
+        <section class="Menu" id="Menu">
+            <h2 class="title">Nosso <span>Menu</span></h2>
+            <div class="box-container">
+                <div class="box">
+                    <img src="imagens/menu 1.png" alt="Carvão 4kg" loading="lazy">
+                    <h3>4 KG</h3>
+                    <div class="price">R$ 15,00</div>
+                    <a href="#Address" class="btn">Compre Já</a>
+                </div>
+                <div class="box">
+                    <img src="imagens/menu 2.png" alt="Carvão 8kg" loading="lazy">
+                    <h3>8 KG</h3>
+                    <div class="price">R$ 25,00</div>
+                    <a href="#Address" class="btn">Compre Já</a>
+                </div>
+                <div class="box">
+                    <img src="imagens/menu 3.png" alt="Carvão 10kg" loading="lazy">
+                    <h3>10 KG</h3>
+                    <div class="price">R$ 35,00</div>
+                    <a href="#Address" class="btn">Compre Já</a>
+                </div>
+                <div class="box">
+                    <img src="imagens/menu 4.png" alt="Carvão 25kg" loading="lazy">
+                    <h3>25 KG</h3>
+                    <div class="price">R$ 50,00</div>
+                    <a href="#Address" class="btn">Compre Já</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- AVALIAÇÕES -->
+        <section class="Review" id="Review">
+            <h2 class="title">Nossos <span>Clientes</span></h2>
+            <div class="box-container">
+                <div class="box">
+                    <img src="imagens/quote-img.png" alt="" loading="lazy">
+                    <p>Meu filho… esse carvão Maravilha é coisa boa demais. Antigamente, a gente se engasgava com tanta
+                        fumaça. Mas esse aí, olha… quase não solta fumaça!</p>
+                    <img src="imagens/profile 2.png" alt="Foto do cliente" class="user" loading="lazy">
+                    <h3>João da Silva</h3>
+                </div>
+                <div class="box">
+                    <img src="imagens/quote-img.png" alt="" loading="lazy">
+                    <p>O Carvão Maravilha é uma excelente escolha para quem busca qualidade, sustentabilidade e
+                        desempenho na hora do churrasco.</p>
+                    <img src="imagens/profile 2.png" alt="Foto do cliente" class="user" loading="lazy">
+                    <h3>Maria de Souza</h3>
+                </div>
+                <div class="box">
+                    <img src="imagens/quote-img.png" alt="" loading="lazy">
+                    <p>Já testei vários carvões, mas o Carvão Maravilha realmente me surpreendeu. Acende fácil, dura
+                        muito e quase não faz fumaça!</p>
+                    <img src="imagens/profile 2.png" alt="Foto do cliente" class="user" loading="lazy">
+                    <h3>Osmar Will</h3>
+                </div>
+                <div class="box">
+                    <img src="imagens/quote-img.png" alt="" loading="lazy">
+                    <p>Produzido de forma artesanal, o Carvão Maravilha do Sr. Manoel é sinônimo de qualidade e
+                        confiança. Do interior direto pra sua grelha — porque quem entende de brasa, escolhe o melhor.
+                    </p>
+                    <img src="imagens/profile 2.png" alt="Foto do cliente" class="user" loading="lazy">
+                    <h3>Adenilson Cossuol</h3>
+                </div>
+                <div class="box">
+                    <img src="imagens/quote-img.png" alt="" loading="lazy">
+                    <p>O Carvão Maravilha é um produto de excelente qualidade, ideal para quem busca praticidade e ótimo
+                        desempenho no preparo do churrasco. Possui pedaços bem selecionados, que acendem com facilidade
+                        e garantem uma brasa duradoura e uniforme. Produz pouca fumaça e quase nenhuma faísca, e a
+                        embalagem é resistente e vem com o peso exato indicado.</p>
+                    <img src="imagens/profile 2.png" alt="Foto do cliente" class="user" loading="lazy">
+                    <h3>Rosangela Helena dos Santos</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- MAPA + REDES -->
+        <div class="address-container" id="Address">
+            <iframe title="Mapa do Sítio Maravilha"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3735.1258638121053!2d-40.91299819004644!3d-20.582916980877794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb90bcbf3d92bbd%3A0x5166255cdd908cb8!2sS%C3%ADtio%20Maravilha-!5e0!3m2!1spt-BR!2sbr!4v1761310437585!5m2!1spt-BR!2sbr"
+                allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <div class="share">
+                <a href="https://www.facebook.com/share/1BHULf3fic/" target="_blank" rel="noopener" aria-label="Facebook"><img
+                        src="https://img.icons8.com/ios/40/ffffff/facebook--v1.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/carvao_maravilha?igsh=ZmsxcHBwZGx6dmw0" target="_blank" rel="noopener" aria-label="Instagram"><img
+                        src="https://img.icons8.com/ios-glyphs/40/ffffff/instagram-new.png" alt="Instagram"></a>
+                <a href="https://wa.me/5527996980024" target="_blank" rel="noopener" aria-label="WhatsApp"><img
+                        src="https://img.icons8.com/ios/40/ffffff/whatsapp--v1.png" alt="WhatsApp"></a>
             </div>
         </div>
-    </section>
 
-    <!-- MENU -->
-    <section class="Menu" id="Menu">
-        <h2 class="title">Nosso <span>Menu</span></h2>
-        <div class="box-container">
-            <div class="box">
-                <img src="imagens/menu 1.png" alt="Carvão 4kg">
-                <h3>4 KG</h3>
-                <div class="price ,so-primeira-letra ">R$ 15,00</div>
-                <a href="#Address" class="btn">Compre Já</a>
+        <!-- GALERIA -->
+        <section class="gallery" id="gallery">
+            <h2 class="titulo-galeria">Nossa Galeria</h2>
+            <div class="box-imagens">
+                <div class="carrossel-container">
+                    <img src="imagens/img 1.0.jpeg" alt="Galeria 1" loading="lazy">
+                    <img src="imagens/img 1.1.jpeg" alt="Galeria 2" loading="lazy">
+                    <img src="imagens/img 1.2.jpeg" alt="Galeria 3" loading="lazy">
+                    <img src="imagens/img 1.5.jpeg" alt="Galeria 4" loading="lazy">
+                    <img src="imagens/img 1.6.jpeg" alt="Galeria 5" loading="lazy">
+                </div>
             </div>
-
-            <div class="box">
-                <img src="imagens/menu 2.png" alt="Carvão 8kg">
-                <h3>8 KG</h3>
-                <div class="price , so-primeira-letra">R$ 25,00</div>
-                <a href="#Address" class="btn">Compre Já</a>
-            </div>
-
-            <div class="box">
-                <img src="imagens/menu 3.png" alt="Carvão 10kg">
-                <h3>10 KG</h3>
-                <div class="price , so-primeira-letra">R$ 35,00</div>
-                <a href="#Address" class="btn">Compre Já</a>
-            </div>
-
-            <div class="box">
-                <img src="imagens/menu 4.png" alt="Carvão 25kg">
-                <h3>25 KG</h3>
-                <div class="price , so-primeira-letra">R$ 50,00</div>
-                <a href="#Address" class="btn">Compre Já</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- AVALIAÇÕES -->
-    <section class="Review" id="Review">
-        <h2 class="title">Nossos <span>Clientes</span></h2>
-        <div class="box-container">
-
-            <div class="box">
-                <img src="imagens/quote-img.png" alt="comentario">
-                <p class="so-primeira-letra">Meu filho… esse carvão Maravilha é coisa boa demais. Antigamente, a gente
-                    se engasgava com tanta fumaça. Mas esse aí, olha… quase não solta fumaça!</p>
-                <img src="imagens/profile 2.png" alt="foto-cliente" class="user">
-                <h3 class="so-primeira-letra">João da Silva</h3>
-            </div>
-
-            <div class="box">
-                <img src="imagens/quote-img.png" alt="comentario">
-                <p class="so-primeira-letra">O Carvão Maravilha é uma excelente escolha para quem busca qualidade,
-                    sustentabilidade e desempenho na hora do churrasco.</p>
-                <img src="imagens/profile 2.png" alt="foto-cliente" class="user">
-                <h3 class="so-primeira-letra">Maria de Souza</h3>
-            </div>
-
-            <div class="box">
-                <img src="imagens/quote-img.png" alt="comentario">
-                <p class="so-primeira-letra">Já testei vários carvões, mas o Carvão Maravilha realmente me surpreendeu.
-                    Acende fácil, dura muito e quase não faz fumaça!</p>
-                <img src="imagens/profile 2.png" alt="foto-cliente" class="user">
-                <h3 class="so-primeira-letra"> Osmar Will </h3>
-            </div>
-            <div class="box">
-                <img src="imagens/quote-img.png" alt="comentario">
-                <p class="so-primeira-letra">Produzido de forma artesanal, o Carvão Maravilha do Srº Manoel é sinônimo
-                    de qualidade e confiança. Do interior direto pra sua grelha — porque quem entende de brasa, escolhe
-                    o melhor.</p>
-                <img src="imagens/profile 2.png" alt="foto-cliente" class="user">
-                <h3 class="so-primeira-letra">Adenilson cossuol</h3>
-            </div>
-            <div class="box">
-                <img src="imagens/quote-img.png" alt="comentario">
-                <p class="so-primeira-letra">O Carvão Maravilha é um produto de excelente qualidade, ideal para quem
-                    busca praticidade e ótimo desempenho no preparo do churrasco. Possui pedaços bem selecionados, que
-                    acendem com facilidade e garantem uma brasa duradoura e uniforme, mantendo o calor constante durante
-                    todo o uso.
-                    Outro ponto positivo é que o carvão produz pouca fumaça e quase nenhuma faísca, tornando o momento
-                    do churrasco mais agradável e seguro. A embalagem é resistente, de fácil manuseio e vem com o peso
-                    exato indicado, demonstrando o cuidado da marca com o consumidor.
-                </p>
-                <img src="imagens/profile 2.png" alt="foto-cliente" class="user">
-                <h3 class="so-primeira-letra"> Rosangela Helena Dos Santos</h3>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- MAPA + REDES -->
-    <section class="address-container Address" id="Address">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3735.1258638121053!2d-40.91299819004644!3d-20.582916980877794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb90bcbf3d92bbd%3A0x5166255cdd908cb8!2sS%C3%ADtio%20Maravilha-!5e0!3m2!1spt-BR!2sbr!4v1761310437585!5m2!1spt-BR!2sbr"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-        <div class="share">
-            <a href="https://www.facebook.com/share/1BHULf3fic/"><img
-                    src="https://img.icons8.com/ios/40/ffffff/facebook--v1.png" alt="Facebook"></a>
-            <a href="https://www.instagram.com/carvao_maravilha?igsh=ZmsxcHBwZGx6dmw0"><img
-                    src="https://img.icons8.com/ios-glyphs/40/ffffff/instagram-new.png" alt="Instagram"></a>
-            <a href="https://wa.me/5527996980024"><img src="https://img.icons8.com/ios/40/ffffff/whatsapp--v1.png"
-                    alt="WhatsApp"></a>
-        </div>
-    </section>
-
-    <!-- GALERIA -->
-    <section class="gallery" id="gallery">
-        <h2 class="titulo-galeria , so-primeira-letra">Nossa Galeria</h2>
-        <div class="box-imagens">
-            <div class="carrossel-container">
-                <img src="imagens/img 1.0.jpeg" alt="Galeria 2" width="300">
-                <img src="imagens/img 1.1.jpeg" alt="Galeria 2" width="300">
-                <img src="imagens/img 1.2.jpeg" alt="Galeria 2" width="300">
-                <img src="imagens/img 1.5.jpeg" alt="Galeria 2" width="300">
-                <img src="imagens/img 1.6.jpeg" alt="Galeria 2" width="300">
-
-            </div>
-        </div>
-    </section>
-
-    <!-- JAVASCRIPT -->
-    <script src="script.js"></script>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2025 Carvão Maravilha - Todos os direitos reservados.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 
-
 </html>
-
-
